@@ -11,17 +11,27 @@
       <font-awesome-icon icon="fa-solid fa-cart-shopping" class="icon" />
     </ul>
     <div class="damon">
-        <h1>Damon Voughn</h1>
-        <p>Best-selling author and the most influential public
-            intelletual in the western world rright now</p>
+      <h1>Damon Voughn</h1>
+      <p>
+        Best-selling author and the most influential public intelletual in the
+        western world rright now
+      </p>
+      <div>- The New York Times</div>
     </div>
-    <div class="img_book">
-      <img src="../assets/images/book-widget.png" alt="" />
+    <div class="img_book_container">
+        <div class="img_book">
+            <img src="../assets/images/book-widget.png" alt="" />
       <div>
         <h3>Latest Book Release</h3>
         <p>D. VAUGHN AUTOBIOGRAPHY</p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
         exercitationem eaque perspiciatis eos ratione nemo
+      </div>
+        </div>
+
+      <div class="btns">
+        <button>Buy on Amazon</button>
+        <button>Buy on AppStore</button>
       </div>
     </div>
   </div>
@@ -67,6 +77,7 @@ export default {
 .header_menu {
   height: 70vh;
   position: relative;
+  margin-bottom: 6rem ;
   ul {
     position: absolute;
     top: 0;
@@ -85,12 +96,11 @@ li:hover {
   color: rgba(244, 180, 41, 1);
   cursor: pointer;
 }
-.icon:hover{
-    color: rgba(244, 180, 41, 1);
+.icon:hover {
+  color: rgba(244, 180, 41, 1);
   cursor: pointer;
 }
-.img_book {
-  display: flex;
+.img_book_container {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -108,19 +118,38 @@ li:hover {
     color: rgba(244, 180, 41, 1);
   }
 }
-.damon{
-    position: absolute;
-    bottom: 4rem;
-    color: rgba(244, 180, 41, 1);
-    padding: 4rem;
-    width: 40rem;
-    h1{
-        font-family: 'La Belle Aurore', cursive;
-        font-size: 40px;
-    }
-    p{
-     font-size: 30px;
-     color: white;
-    }
+.img_book{
+    display: flex;
+}
+.damon {
+  position: absolute;
+  bottom: 4rem;
+  color: rgba(244, 180, 41, 1);
+  padding: 4rem;
+  width: 40rem;
+  h1 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 40px;
+  }
+  p {
+    font-size: 30px;
+    color: white;
+  }
+  div{
+    color: gray;
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  button{
+    padding: .8rem 3rem;
+    border: 1px solid rgba(192, 225, 213, 1);
+    background-color: white;
+  }
+
+}
+button:hover{
+    background-color: rgba(245, 252, 250, 1);
 }
 </style>
