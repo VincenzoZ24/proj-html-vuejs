@@ -106,6 +106,11 @@
         </div>
       </div>
     </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div>MEET THE AUTHOR IN PERSON</div>
+    </section>
   </main>
 </template>
 
@@ -300,6 +305,19 @@ hr {
     font-size: 14px;
     img{
       margin-right: .5rem;
+    }
+  }
+  .events{
+    height: 50vh;
+    background-color: rgba(254, 247, 233, 1);
+    text-align: center;
+    h2{
+      padding-top: 2rem;
+    }
+    div{
+      color: rgba(246, 201, 137, 1);
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
   }
 </style>
