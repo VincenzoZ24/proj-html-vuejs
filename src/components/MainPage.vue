@@ -110,13 +110,50 @@
     <section class="events">
       <h2>Upcoming Events</h2>
       <div>MEET THE AUTHOR IN PERSON</div>
+      <div class="container_cards">
+        <CardPage class="card_page" v-for="card in arrCards" :key="card.title"
+        :img="card.img"
+        :title="card.title"
+        :paragrafo="card.paragrafo"
+        />
+      </div>
     </section>
   </main>
 </template>
 
 <script>
+import CardPage from '@/components/CardPage.vue';
+
 export default {
   name: 'MainPage',
+  components: {
+    CardPage,
+
+  },
+  data() {
+    return {
+      arrCards: [
+        {
+          img: 'img/event-05-600x359.jpg',
+          title: 'Chicago Book Signin',
+          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+
+        },
+        {
+          img: 'img/event-04-600x359.jpg',
+          title: 'Meet & Greet With Amadia',
+          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+
+        },
+        {
+          img: 'img/event-07-600x359.jpg',
+          title: 'Open Book: Dialogues',
+          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -320,4 +357,13 @@ hr {
       margin-bottom: 2rem;
     }
   }
+  .container_cards{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  color: black;
+}
 </style>
