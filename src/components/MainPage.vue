@@ -134,13 +134,13 @@ export default {
     return {
       arrCards: [
         {
-          img: 'img/event-05-600x359.jpg',
+          img: '/img/event-05-600x359.jpg',
           title: 'Chicago Book Signin',
           paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
 
         },
         {
-          img: 'img/event-04-600x359.jpg',
+          img: '/img/event-04-600x359.jpg',
           title: 'Meet & Greet With Amadia',
           paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
 
@@ -342,10 +342,11 @@ hr {
     font-size: 14px;
     img{
       margin-right: .5rem;
+
     }
   }
   .events{
-    height: 50vh;
+
     background-color: rgba(254, 247, 233, 1);
     text-align: center;
     h2{
@@ -354,7 +355,7 @@ hr {
     div{
       color: rgba(246, 201, 137, 1);
       margin-top: 1rem;
-      margin-bottom: 2rem;
+
     }
   }
   .container_cards{
