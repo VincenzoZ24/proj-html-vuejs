@@ -378,6 +378,7 @@ hr {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  overflow: auto;
   gap: 1rem;
 
   color: black;

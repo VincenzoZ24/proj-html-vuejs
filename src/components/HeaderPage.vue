@@ -17,6 +17,10 @@
         western world rright now
       </p>
       <div>- The New York Times</div>
+      <div class="frecce">
+        <font-awesome-icon icon="fa-solid fa-left-long" class="icon_frecce"/>
+        <font-awesome-icon icon="fa-solid fa-right-long" class="icon_frecce"/>
+      </div>
     </div>
     <div class="img_book_container">
         <div class="img_book">
@@ -30,8 +34,15 @@
         </div>
 
       <div class="btns">
-        <button>Buy on Amazon</button>
-        <button>Buy on AppStore</button>
+        <button class="btn_amazon">
+            <font-awesome-icon icon="fa-brands fa-amazon" />
+            Buy on Amazon
+        </button>
+        <button class="btn_apple">
+            <font-awesome-icon icon="fa-brands fa-apple" />
+            Buy on AppStore
+
+        </button>
       </div>
     </div>
   </div>
@@ -73,6 +84,11 @@ export default {
   background-image: url("../assets/images/hero-07-2x.jpg");
   position: relative;
   filter: brightness(50%);
+}
+.btn_amazon{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 .header_menu {
   height: 70vh;
@@ -138,6 +154,20 @@ li:hover {
   div{
     color: gray;
   }
+}
+.frecce{
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.icon_frecce{
+    padding: .5rem;
+    background-color: black;
+}
+.btn_apple{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 .btns {
   display: flex;
