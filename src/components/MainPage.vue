@@ -118,6 +118,21 @@
         />
       </div>
     </section>
+    <section class="iscrizione">
+      <div class="container_iscrizioe">
+        <h2>Subscribe To My NewsLetter</h2>
+        <p>BE NOTIFIED ABOUT BOOKSINING TOUR DATES</p>
+        <div class="input">
+          <label for="get">
+            <input type="email" name="" id="" placeholder="inset your email">
+            <button>Subscribe</button>
+          </label>
+          <p class="end_input
+          ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta placeat
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -366,5 +381,46 @@ hr {
   gap: 1rem;
 
   color: black;
+}
+.iscrizione{
+  background-image: url('@/assets/images/banner-2.jpg');
+}
+.container_iscrizioe{
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 6rem 2rem;
+  h2{
+    color: white;
+
+    margin-bottom: 1rem;
+  }
+  p{
+    color: rgba(244, 180, 41, 1);
+    font-size: 14px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.input{
+input{
+  padding: .5rem 1rem;
+  border-radius: 5px;
+}
+button{
+  padding: .5rem 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(87, 193, 156);
+}
+button:hover{
+  background-color: rgba(73, 169, 135, 1);
+  cursor: pointer;
+}
+}
+.end_input{
+  color: gray !important;
 }
 </style>
