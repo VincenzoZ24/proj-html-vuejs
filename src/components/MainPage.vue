@@ -133,16 +133,29 @@
         </div>
       </div>
     </section>
+    <section class="little">
+      <h2>Dig A Little Deeper Into Damon Vaughn</h2>
+      <div>FIND OUT MORE ABOUT THE AUTHORHIMSELF</div>
+      <div class="container_cards_2">
+        <CardPage2
+        class="card_page" v-for="card in arrCards2" :key="card.title"
+        :img="card.img"
+        :title="card.title"
+        :paragrafo="card.paragrafo"/>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
 import CardPage from '@/components/CardPage.vue';
+import CardPage2 from '@/components/CardPage2.vue';
 
 export default {
   name: 'MainPage',
   components: {
     CardPage,
+    CardPage2,
 
   },
   data() {
@@ -164,6 +177,26 @@ export default {
           img: 'img/event-07-600x359.jpg',
           title: 'Open Book: Dialogues',
           paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+
+        },
+      ],
+      arrCards2: [
+        {
+          img: 'img/box-1.jpg',
+          title: 'About Me',
+          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
+
+        },
+        {
+          img: 'img/box-4.jpg',
+          title: 'My Latest Book',
+          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
+
+        },
+        {
+          img: 'img/box-3.jpg',
+          title: 'Book Signin',
+          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
 
         },
       ],
@@ -385,6 +418,7 @@ hr {
 }
 .iscrizione{
   background-image: url('@/assets/images/banner-2.jpg');
+  margin-bottom: 3.5rem;
 }
 .container_iscrizioe{
   max-width: 800px;
@@ -423,5 +457,26 @@ button:hover{
 }
 .end_input{
   color: gray !important;
+}
+.little{
+text-align: center;
+h2{
+  padding-top: 2rem;
+}
+div{
+  color: rgba(73, 169, 135, 1);
+  margin-top: 1rem;
+
+}
+}
+.container_cards_2{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 1rem;
+
+  color: black;
 }
 </style>
