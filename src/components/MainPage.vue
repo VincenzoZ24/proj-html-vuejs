@@ -72,34 +72,38 @@
                 incidunt hic fugit sit natus
               </p>
               <p class="end_left">
-                <img class="img_end_left"
-                src="@/assets/images/nytimes-logo-white-xsmall.png" alt="">
-              Justin Kilpatrik, <span>The New York Times</span>
+                <img
+                  class="img_end_left"
+                  src="@/assets/images/nytimes-logo-white-xsmall.png"
+                  alt=""
+                />
+                Justin Kilpatrik, <span>The New York Times</span>
               </p>
-
             </div>
           </div>
           <div class="best_author_right">
             <div class="first">
               <h3>A True Masterpice, Bravo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores explicabo nesciunt
-                quibusdam distinctio at soluta repellendus reprehenderit
-                repudiandae delectus ipsum pariatur</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                explicabo nesciunt quibusdam distinctio at soluta repellendus
+                reprehenderit repudiandae delectus ipsum pariatur
+              </p>
             </div>
             <div class="the_guardian">
-              <img src="@/assets/images/theguardian-xsmall.png" alt="">
+              <img src="@/assets/images/theguardian-xsmall.png" alt="" />
               Gerald Hendlay, The Guardian
             </div>
             <div class="first">
               <h3>A Unique View On The world</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores explicabo nesciunt
-                quibusdam distinctio at soluta repellendus reprehenderit
-                repudiandae delectus ipsum pariatur</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                explicabo nesciunt quibusdam distinctio at soluta repellendus
+                reprehenderit repudiandae delectus ipsum pariatur
+              </p>
             </div>
             <div class="the_globe">
-              <img src="@/assets/images/globe-xsmall.png" alt="">
+              <img src="@/assets/images/globe-xsmall.png" alt="" />
               Mary Maxey, The Globe And Main
             </div>
           </div>
@@ -111,10 +115,13 @@
       <h2>Upcoming Events</h2>
       <div>MEET THE AUTHOR IN PERSON</div>
       <div class="container_cards">
-        <CardPage class="card_page" v-for="card in arrCards" :key="card.title"
-        :img="card.img"
-        :title="card.title"
-        :paragrafo="card.paragrafo"
+        <CardPage
+          class="card_page"
+          v-for="card in arrCards"
+          :key="card.title"
+          :img="card.img"
+          :title="card.title"
+          :paragrafo="card.paragrafo"
         />
       </div>
     </section>
@@ -124,11 +131,12 @@
         <p>BE NOTIFIED ABOUT BOOKSINING TOUR DATES</p>
         <div class="input">
           <label for="get">
-            <input type="email" name="" id="" placeholder="inset your email">
+            <input type="email" name="" id="" placeholder="inset your email" />
             <button>Subscribe</button>
           </label>
-          <p class="end_input
-          ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta placeat
+          <p class="end_input">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+            placeat
           </p>
         </div>
       </div>
@@ -138,10 +146,51 @@
       <div>FIND OUT MORE ABOUT THE AUTHORHIMSELF</div>
       <div class="container_cards_2">
         <CardPage2
-        class="card_page" v-for="card in arrCards2" :key="card.title"
-        :img="card.img"
-        :title="card.title"
-        :paragrafo="card.paragrafo"/>
+          class="card_page"
+          v-for="card in arrCards2"
+          :key="card.title"
+          :img="card.img"
+          :title="card.title"
+          :paragrafo="card.paragrafo"
+        />
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container_articles">
+        <div class="article_top">
+          <div>
+            <h2>Recent Article</h2>
+            <p>READ THE LAST ENTRIES</p>
+          </div>
+
+          <button>All Articles</button>
+        </div>
+        <div class="content_img_article">
+          <div class="left_article">
+            <img src="@/assets/images/20-Tips-600x353.jpg" alt="" />
+            <div class="text_article">
+              <h3>20 Creativity Tips</h3>
+              <p class="sottotitolo">By admin | October 24th, 2019 | Categoris Event</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Aspernatur quae <br>
+                  eligendi ipsam, ullam ab aute</p>
+            </div>
+          </div>
+          <div class="right_article">
+            <div class="right_top">
+              <img src="@/assets/images/thumb-13-2x-320x202.jpg" alt="">
+            <div class="text_article">
+              <h3>What's On Your BookList?</h3>
+              <p class="sottotitolo"> October 24th, 2019 </p>
+            </div>
+            </div>
+            <img src="@/assets/images/thumb-08-2x-320x202.jpg" alt="">
+            <div class="text_article">
+              <h3>Istanbul Travel Guide</h3>
+              <p class="sottotitolo"> October 24th, 2019 </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -156,7 +205,6 @@ export default {
   components: {
     CardPage,
     CardPage2,
-
   },
   data() {
     return {
@@ -164,40 +212,40 @@ export default {
         {
           img: '/img/event-05-600x359.jpg',
           title: 'Chicago Book Signin',
-          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
-
+          paragrafo:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         },
         {
           img: '/img/event-04-600x359.jpg',
           title: 'Meet & Greet With Amadia',
-          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
-
+          paragrafo:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         },
         {
           img: 'img/event-07-600x359.jpg',
           title: 'Open Book: Dialogues',
-          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
-
+          paragrafo:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
         },
       ],
       arrCards2: [
         {
           img: 'img/box-1.jpg',
           title: 'About Me',
-          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
-
+          paragrafo:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
         },
         {
           img: 'img/box-4.jpg',
           title: 'My Latest Book',
-          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
-
+          paragrafo:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
         },
         {
           img: 'img/box-3.jpg',
           title: 'Book Signin',
-          paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
-
+          paragrafo:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elite Lorem ',
         },
       ],
     };
@@ -344,69 +392,64 @@ hr {
     }
   }
 }
-.end_left{
-
+.end_left {
   height: 40px;
   display: flex;
   align-items: center;
   color: white;
-  span{
+  span {
     color: rgba(71, 163, 124, 1);
   }
-
 }
-.img_end_left{
+.img_end_left {
   flex: 40px 0 1;
-   max-width: 100%;
-   max-height: 100%;
-    object-fit: contain;
-  }
-  .best_author_right{
-   .first{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.best_author_right {
+  .first {
     text-align: center;
     background-color: rgba(254, 247, 233, 1);
     padding: 1rem;
-    p{
-      margin-top: .5rem;
+    p {
+      margin-top: 0.5rem;
       color: gray;
       line-height: 2rem;
     }
-   }
   }
-  .the_guardian{
-    display: flex;
-    align-items: center;
-    margin-top: .5rem;
-    font-size: 14px;
-    margin-bottom: 2rem;
-    img{
-      margin-right: .5rem;
-    }
+}
+.the_guardian {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 2rem;
+  img {
+    margin-right: 0.5rem;
   }
-  .the_globe{
-    display: flex;
-    align-items: center;
-    margin-top: .5rem;
-    font-size: 14px;
-    img{
-      margin-right: .5rem;
-
-    }
+}
+.the_globe {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  img {
+    margin-right: 0.5rem;
   }
-  .events{
-
-    background-color: rgba(254, 247, 233, 1);
-    text-align: center;
-    h2{
-      padding-top: 2rem;
-    }
-    div{
-      color: rgba(246, 201, 137, 1);
-      margin-top: 1rem;
-
-    }
+}
+.events {
+  background-color: rgba(254, 247, 233, 1);
+  text-align: center;
+  h2 {
+    padding-top: 2rem;
   }
-  .container_cards{
+  div {
+    color: rgba(246, 201, 137, 1);
+    margin-top: 1rem;
+  }
+}
+.container_cards {
   max-width: 1100px;
   margin: auto;
   display: flex;
@@ -416,67 +459,124 @@ hr {
 
   color: black;
 }
-.iscrizione{
-  background-image: url('@/assets/images/banner-2.jpg');
+.iscrizione {
+  background-image: url("@/assets/images/banner-2.jpg");
   margin-bottom: 3.5rem;
 }
-.container_iscrizioe{
+.container_iscrizioe {
   max-width: 800px;
   margin: auto;
   text-align: center;
   padding: 6rem 2rem;
-  h2{
+  h2 {
     color: white;
 
     margin-bottom: 1rem;
   }
-  p{
+  p {
     color: rgba(244, 180, 41, 1);
     font-size: 14px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 }
-.input{
-input{
-  padding: .5rem 1rem;
-  border-radius: 5px;
+.input {
+  input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(87, 193, 156);
+  }
+  button:hover {
+    background-color: rgba(73, 169, 135, 1);
+    cursor: pointer;
+  }
 }
-button{
-  padding: .5rem 1rem;
-  margin-left: 1rem;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  background-color: rgb(87, 193, 156);
-}
-button:hover{
-  background-color: rgba(73, 169, 135, 1);
-  cursor: pointer;
-}
-}
-.end_input{
+.end_input {
   color: gray !important;
 }
-.little{
-text-align: center;
-h2{
-  padding-top: 2rem;
+.little {
+  text-align: center;
+  h2 {
+    padding-top: 2rem;
+  }
+  div {
+    color: rgba(73, 169, 135, 1);
+    margin-top: 1rem;
+  }
 }
-div{
-  color: rgba(73, 169, 135, 1);
-  margin-top: 1rem;
-
-}
-}
-.container_cards_2{
+.container_cards_2 {
   max-width: 1100px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
   gap: 1rem;
-
+  margin-bottom: 4rem;
   color: black;
+}
+.articles {
+  background-color: rgba(254, 247, 233, 1);
+  padding: 4rem;
+}
+.article_top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: rgba(244, 180, 41, 1);
+  }
+  button {
+    margin: 1rem;
+    padding: 0.5rem 3rem;
+    border: none;
+    background-color: rgb(245, 195, 88);
+    color: white;
+    border-radius: 5px;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(244, 180, 41, 1);
+  }
+}
+.container_articles {
+  max-width: 1000px;
+  margin: auto;
+}
+.content_img_article{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.left_article{
+  padding: 2rem;
+  background-color: white;
+}
+.text_article{
+  margin-top: 1rem;
+  .sottotitolo{
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+}
+.right_article{
+  padding: 2rem;
+  background-color: white;
+  img{
+    width: 100%;
+  }
+}
+.right_top{
+  margin-bottom: 4rem;
 }
 </style>
